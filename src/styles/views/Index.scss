@@ -1,0 +1,111 @@
+.main {
+  margin: 15px auto;
+
+  .content .nav {
+    background-color: #f6f6f6;
+    padding: 10px;
+  }
+  .content .nav>li {
+    float: left;
+    margin: 0 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content .nav li a {
+    border-radius: 5px;
+    padding: 3px 4px;
+    color: #80db01;
+  }
+  .content .nav .list-active {
+    background-color: #80db01;
+    color: #fff;
+  }
+  .content .cell {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    display: block;
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .pop-top {
+      text-align: center;
+      width: 80px;
+      display: inline-block;
+    }
+    .pop_top_good {
+      background-color: #80db01;
+      padding: 2px 4px;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 3px;
+      margin: 5px;
+    }
+    .pop_nice_good {
+      background-color: #80db01;
+      padding: 2px 4px;
+      color: #fff;
+      font-size: 12px;
+      border-radius: 3px;
+      margin: 5px;
+    }
+    .pop_problem_top{
+      background-color: #e5e5e5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin: 5px;
+    }
+    .pop_nice_share {
+      background-color: #e5e5e5;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 12px;
+      margin: 5px;
+    }
+    .user-big {
+      color: #9e78c0;
+      font-size: 14px;
+    }
+    .user-small {
+      color: #b4b4b4;
+      font-size: 12px;
+    }
+    .user-right {
+      float: right;
+      color: #778087;
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.pagin_menu {
+  background-color: #fff;
+  height: 40px;
+}
+.pagin_menu ul {
+  margin-left: 10px;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 0;
+}
+.pagin_menu ul li {
+  float: left;
+  border: 1px solid #ddd;
+}
+.pagin_menu ul li a {
+  display: block;
+  padding: 4px 12px;
+  color: #778087;
+}
+.pagin_menu .pagin_number {
+  display: block;
+  padding: 4px 12px;
+}

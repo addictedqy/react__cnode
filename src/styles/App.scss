@@ -1,0 +1,13 @@
+@import './base.scss';
+@import './layout.scss';
+
+// component
+@import '../compontents/presntaional/header/Header.scss';
+@import '../compontents/presntaional/footer/Footer.scss';
+
+// views
+@import '../styles/views/Index.scss';
+@import '../styles/views/Getstart.scss';
+@import '../styles/views/Themes.scss';
+@import '../styles/views/Api.scss';
+@import '../styles/views/Content.scss';

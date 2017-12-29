@@ -1,0 +1,40 @@
+body{
+  font-size: 14px;
+  color: #333333;
+  background-color: #e1e1e1;
+  width: 100%;
+  margin: 0 auto;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  padding:0;
+  margin: 0;
+}
