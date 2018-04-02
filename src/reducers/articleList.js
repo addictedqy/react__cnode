@@ -20,11 +20,3 @@ export const articleListReducer = (state = initState(), action) => {
   }
   return state;
 }
-
-// export const articleReducer = (state = [], action) => {
-//   switch (action.type) {
-//     case 'FETCH_ARTICLE_LIST_SUCCESS': 
-//       return action.payload.data;
-//   }
-//   return state;
-// }

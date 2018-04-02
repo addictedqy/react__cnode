@@ -6,6 +6,9 @@ import Api from './view/Api.jsx';
 import Getstart from './view/Getstart.jsx';
 import Themes from './view/Themes.jsx';
 import Content from './view/Content.jsx';
+import Landing from './view/Landing.jsx';
+import Huati from './view/Huati.jsx';
+
 import store from './store/store.js';
 import { Provider } from 'react-redux';
 
@@ -24,7 +27,9 @@ class App extends React.Component {
           <Route path="/api" component={Api} />
           <Route path="/getstart" component={Getstart} />
           <Route path="/themes" component={Themes} />
-          <Route path="/content/:id" component={Content}/>
+          <Route path="/content/:id" component={Content} />
+          <Route path="/landing" component={Landing} />
+          <Route path="/huati" component={Huati} />
           <Redirect to="/404" />
         </Switch>
       </HashRouter>

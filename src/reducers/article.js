@@ -34,7 +34,6 @@ export const articleReducer = (state = initTitleState(), action) => {
         title: action.payload.data,
         fetchange: 'SUCCESS',
       })
-
   }
   return state;
 }

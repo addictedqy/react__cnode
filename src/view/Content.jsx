@@ -55,7 +55,7 @@ class Content extends React.Component {
               <div className="content_header">
                 <span className="topic_title_full">
                   <span className="topic_top_full">置顶</span>
-                  {this.props.article.title}
+                  {article.title}
                 </span>
                 <div className="changes_time">
                   <span>发布于 {timeFlies(article.last_reply_at)}</span>
@@ -66,7 +66,7 @@ class Content extends React.Component {
               </div>
               </div>
               <div className="content_main">
-                <div className="topic_text" dangerouslySetInnerHTML={{__html: this.props.article.content}}>
+                <div className="topic_text" dangerouslySetInnerHTML={{__html: article.content}}>
                   {/*插入主题详情*/}
                 </div>
               </div>

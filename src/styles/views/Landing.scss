@@ -1,0 +1,56 @@
+.content .topic_text .signin_from {
+  margin-top: 40px;
+}
+.signin-group {
+  margin-bottom: 20px;
+}
+.signin-label {
+  float: left;
+  padding: 5px;
+  width: 160px;
+  text-align: right;
+}
+.signin_input {
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 5px;
+  width: 270px;
+}
+.from-actions {
+  display: inline-block;
+  border-radius: 5px;
+  padding-left: 180px;
+}
+.content .topic_text .from-landing {
+  color: #fff;
+  border-radius: 5px;
+  background-color: #5bc0de;
+  padding: 5px;
+  display: block;
+  letter-spacing: 2px;
+}
+.topic_avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.span-success {
+  border-radius: 3px;
+  background-color: #80bd01;
+  border: none;
+  display: inline-block;
+  float: none;
+  padding: 3px 10px;
+  margin: 0;
+  font-size: 14px;
+  transition: all .2s ease-in-out;
+  letter-spacing: 2px;
+  box-shadow: none;
+  line-height: 2em;
+  vertical-align: middle;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}

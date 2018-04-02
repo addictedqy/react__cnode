@@ -1,0 +1,52 @@
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.topic_post {
+  padding: 10px;
+}
+#tab-value {
+  width: 220px;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+select {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  vertical-align: middle;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+textarea#title {
+  padding: 4px 6px;
+  border-bottom: 1em;
+  border: none;
+  width: 98%;
+  resize: none;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 14px;
+  background: hsla(0,0%,0%,0);
+  margin-bottom: 1em;
+  margin-left: 0;
+  color: #555;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 2px rgba(60,60,60,.5);
+}
+.markdown_editor {
+  height: 400px;
+  width: 98%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px rgba(60,60,60,.5);
+}

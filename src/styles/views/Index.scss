@@ -37,6 +37,16 @@
       width: 80px;
       display: inline-block;
     }
+    .pop_topic_text {
+      max-width: 70%;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      line-height: 30px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
     .pop_top_good {
       background-color: #80db01;
       padding: 2px 4px;
@@ -82,6 +92,12 @@
         width: 18px;
         height: 18px;
         margin-right: 10px;
+        display: inline-block;
+      }
+      span {
+        min-width: 70px;
+        display: inline-block;
+        text-align: right;
       }
     }
   }

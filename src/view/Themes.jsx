@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-
+import { Link } from 'react-router-dom';
 import HeaderAndFooter from '../compontents/container/HeaderAndFooter.jsx';
 
 let friendA = require('../images/friend_1.png')

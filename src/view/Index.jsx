@@ -33,7 +33,7 @@ class Index extends React.Component {
     // 如果 top 为 true 显示顶置
     // 如果 good 为 true 显示精华
     // 如果 top 和 good 都不为 true,根据 tab 显示相应的来源
-    if(item.top === true) {
+    if (item.top === true) {
       return <span className="pop_top_good">置顶</span>
     }
     if (item.good === true) {
@@ -59,8 +59,9 @@ class Index extends React.Component {
             <span className="user-small">{item.visit_count}</span>
           </div>
           { this.goodAndtop(item) }
-          <Link to={"/content/" + item.id}>{item.title}</Link>
+          <Link className="pop_topic_text" to={"/content/" + item.id}>{item.title}</Link>
           <a className="user-right" href="">
+            <img src={item.author.avatar_url} alt=""/>
             <span>{timeFlies(item.last_reply_at)}</span>
           </a>
         </div>
@@ -71,7 +72,8 @@ class Index extends React.Component {
   // 从querystring获取相关信息,并解析.
   // 获取页数跟标签信息.
   renderPage() {
-    const obj = querystring.parse(this.props.location.search.slice(1));
+    const obj = querystring.parse(this.props.location.search.slice(1)); 
+    // '?page=1&tab=share' ==> {page: '1', tab: 'share'}
     // 初始化分页与标签信息
     let result = {
       page: 1,
@@ -121,9 +123,24 @@ class Index extends React.Component {
   }
 }
 
+const mapStateToProps = (state) => {
+  return {
+    articlesList: state.articlesList.list,
+  }
+}
+
+const mapDispatchToProps = (disptach) => {
+  return {
+    fetchArticleList: bindActionCreators(fetchArticleList, disptach),
+  }
+}
+
 export default connect(
-  state => ({articlesList: state.articlesList.list}),
-  dispatch => ({
-    fetchArticleList: bindActionCreators(fetchArticleList,dispatch),
-  })
+  // state => ({articlesList: state.articlesList.list}),
+  // mapStateToProps,
+  // dispatch => ({
+  //   fetchArticleList: bindActionCreators(fetchArticleList, dispatch),
+  // })
+  mapStateToProps,
+  mapDispatchToProps,
 )(Index);
