@@ -1,9 +1,8 @@
 const PATH_SRC = __dirname + '/src';
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: PATH_SRC + '/app.jsx',
+  entry: PATH_SRC + '/App.jsx',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.[hash].js',

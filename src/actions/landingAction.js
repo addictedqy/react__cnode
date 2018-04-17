@@ -31,6 +31,7 @@ export const postLanding = (params) => (dispatch) => {
   })
     .then(response => response.json())
       .then(data => {
+        console.log(data)
         dispatch({
           type: 'FETCH_LADING_POST_SUCCESS',
           payload: data,

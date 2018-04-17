@@ -46,6 +46,7 @@ class Content extends React.Component {
   }
 
   render() {
+    console.log(this.props)
     const article = this.props.article;
     return (
       <HeaderAndFooter>

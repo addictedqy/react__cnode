@@ -15,6 +15,7 @@ class Huati extends React.Component {
     super();
     this.state = {
       title: '',
+      value: '',
       tab: '',
     }
   }
@@ -32,27 +33,21 @@ class Huati extends React.Component {
   }
 
   changValue(e) {
-    this.props.changeValueing(e.target.value)
+    this.setState({
+      value: e.target.value,
+    })
   }
 
-  // 发送新主题至相应板块
-  // handleClickFromData() {
-  //   if (this.state.title === '' && this.props.value === '' && this.state.tab === '') {
-  //     alert('请检查格式是否正确，如标题，内容，板块。不能为空');
-  //   } else {
-  //     this.props.fetchTopics('ed67084c-0ee8-4871-901e-8ce55740c4e7', this.state.tab, this.state.title, this.props.value)
-  //     this.state.title = '';
-  //     this.state.value = '';
-  //   }
-  // }
-
   handleClickFromData() {
-    this.props.fetchTopics('ed67084c-0ee8-4871-901e-8ce55740c4e7', this.state.tab, this.state.title, this.props.value);
-    this.state.title = '';
-    this.props.value = '';
+    this.props.fetchTopics('ed67084c-0ee8-4871-901e-8ce55740c4e7', this.state.tab, this.state.title, this.state.value);
+    this.setState({
+      title: '',
+      value: '',
+    })
   }
 
   render() {
+    // console.log(this.props.value)
     return (
       <HeaderAndFooter>
         <div className="content">
@@ -82,7 +77,7 @@ class Huati extends React.Component {
                       <textarea name="title" id="title" rows="1" onChange={this.changeTitle.bind(this)} value={this.state.title} placeholder="标题字数 10 字以上" />
                       <div className="markdown_text">
                         <div className="markdon_text--action">
-                          <textarea onChange={this.changValue.bind(this)} value={this.props.value} className="markdown_editor" name="t_content" rows="20" />
+                          <textarea onChange={this.changValue.bind(this)} value={this.state.value} className="markdown_editor" name="t_content" rows="20" />
                         </div>
                       </div>
                       <div className="editor_buttons">
@@ -101,11 +96,9 @@ class Huati extends React.Component {
 }
 
 export default connect(
-  state => ({
-    value: state.changeValue,
-  }),
+  state => ({}),
   dispatch => ({
     fetchTopics: bindActionCreators(fetchTopics, dispatch),
-    changeValueing: bindActionCreators(changeValueAction, dispatch),
+    // changeValueing: bindActionCreators(changeValueAction, dispatch),
   })
 )(Huati)

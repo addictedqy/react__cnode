@@ -91,6 +91,7 @@ class Index extends React.Component {
   // { page: x, tab: 'all'}
 
   render() {
+    console.log(this.props)
     const paginationInfo = this.renderPage();  // { page: x, tab: 'all'}
     // 得到上一页页码
     const prev = paginationInfo.page === 1 ? 1 : paginationInfo.page - 1;
